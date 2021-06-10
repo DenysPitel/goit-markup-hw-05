@@ -463,6 +463,13 @@ img {
 
 .card-feat {
   position: relative;
+  overflow: hidden;
+}
+
+.card-feat:hover .card-text-cont,
+.card-feat:focus .card-text-cont {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .card-text-cont {
@@ -473,23 +480,10 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: var(--proj-back-hover);
   opacity: 0;
   transform: translateY(100%);
-  /* transition: var(--transf-hover); */
-}
-
-.card-fead-cont:hover {
-  opacity: 1;
-  transform: translateY(0);
-  transition: transform 1s linear;
-
-  /* background-color: var(--proj-back-hover); */
-}
-
-.card-feat:hover .card-text-cont,
-.card-feat:focus .card-text-cont {
-  opacity: 1;
+  background-color: var(--proj-back-hover);
+  transition: var(--transf-hover);
 }
 
 .card-text {
