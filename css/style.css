@@ -715,12 +715,6 @@ img {
   transition: var(--transf-hover);
 }
 
-/* .btn-modal-close:hover,
-.btn-modal-close:focus {
-  transform: translate(0) scale(1);
-  transition: transform var(--transf-hover);
-} */
-
 .icon-btn-close {
   position: absolute;
   transform: translate3d(-50%, -50%, 0);
